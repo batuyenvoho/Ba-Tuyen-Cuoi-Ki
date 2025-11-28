@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ba Tuyen - Cuoi Ki</title>
+
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Teko:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- ICON -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- BOOTSTRAP -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="..."
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <nav class="mobile-menu">
+        <ul>
+          <li><a href="#home-section">Home</a></li>
+          <li><a href="#cavs-section">Cavs</a></li>
+          <li><a href="#shop-section">Shop</a></li>
+          <li><a href="#contact-section">Contact</a></li>
+          <li class="nav_more">
+            <a href="">More</a>
+            <i class="fa-solid fa-caret-down"></i>
+            <div class="nav_more_items">
+              <a href="#shop-section">Merchandise</a>
+              <a href="#">Tickets</a>
+              <a href="#">Squads</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <div class="mobile-controls">
+        
+        <div class="nav_search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        
+        <button class="nav-toggle" aria-controls="main-nav" aria-expanded="false" title="Menu">
+            <i class="fa-solid fa-bars"></i> 
+        </button>
+    </div>
+    </header>
+
+    <!-- CAROUSEL -->
+    <section class="carouselCavs" id="home-section">
+      <div
+        id="carouselExampleCaptions"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="assets/img/carousel1.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h2>THE PROMISE KEPT</h2>
+              <p>
+                The greatest comeback in Finals history ended a 52-year drought.
+                Relive Cleveland's monumental victory and the unforgettable
+                celebration.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="assets/img/carousel2.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h2>DEFEND THE LAND</h2>
+              <p>
+                The Core is here. Led by Donovan Mitchell, Darius Garland, and
+                Evan Mobley, the Cavaliers are built for the future and
+                competing now. Follow the push for the playoffs.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="assets/img/carousel3.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h2>THE DAGGER IN TORONTO</h2>
+              <p>
+                <strong>May 5, 2018.</strong> A one-handed, off-balance floater
+                at the buzzer in Game 3 of the ECSF. The shot that solidified a
+                sweep and put the stamp on the 'LeBronto' era.
+              </p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- CAVS -->
+    <section class="cavs spacing" id="cavs-section">
+      <div class="heading">
+        <h1>WE ARE CAVALIERS</h1>
+        <p>DEFENDING THE LAND. HONOURING THE PAST.</p>
+      </div>
+      <div class="content">
+        <p>
+          The Cleveland Cavaliers (Cavs) are an NBA team known for periods of
+          resilience and triumph. Based in Cleveland, Ohio, the franchise's
+          defining moment was the 2016 NBA Championship, led by native LeBron
+          James. This historic victory, achieved by overcoming a 3-1 Finals
+          deficit, ended the city's 52-year professional sports drought. Today,
+          the "Wine & Gold" maintain a strong identity built around a dynamic
+          core, including All-Star Donovan Mitchell. They continue to honor
+          their legacy while competing fiercely in the Eastern Conference from
+          their home at Rocket Mortgage FieldHouse. The Cavs faithful remain
+          dedicated, always hoping for the pursuit of the next title.
+        </p>
+        <div class="member">
+          <div class="item">
+            <h5>Facilities</h5>
+            <img src="assets/img/cavs1.jpg" alt="" />
+          </div>
+          <div class="item">
+            <h5>Legends</h5>
+            <img src="assets/img/cavs2.jpg" alt="" />
+          </div>
+          <div class="item">
+            <h5>Squad</h5>
+            <img src="assets/img/cavs3.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Shop -->
+    <section class="shop spacing" id="shop-section">
+      <div class="heading shop-heading">
+        <h1>OFFICIAL CAVS TEAM SHOP</h1>
+        <p>
+          Explore our collection of swingman & authentic jerseys that deliver
+          performance, comfort, and style. Or get nostalgic with our Retro Cavs
+          jerseys, representing every era of the team's history.
+        </p>
+      </div>
+      <div class="shop-content">
+        <div class="shop-detail">
+          <ul>
+            <li>
+              <p>CORE ICON JERSEYS</p>
+              <p class="status-sold">Sold Out</p>
+            </li>
+            <li>
+              <p>STATEMENT & ALTERNATE</p>
+              <p class="status-sold">Sold Out</p>
+            </li>
+            <li>
+              <p>LIMITED EDITION COLLECTIONS</p>
+              <p class="status-ava">6</p>
+            </li>
+          </ul>
+        </div>
+        <div class="shop-overview">
+          <div class="shop-jerseys">
+            <img
+              src="assets/img/jersey1.jpg"
+              alt="LeBron James Canvas Jersey"
+            />
+            <h6>[KING] Nike LeBron James Forever King Canvas Jersey</h6>
+            <p class="price">$250.00</p>
+            <p>
+              Premium canvas jersey honoring LeBron's career. Designed
+              exclusively as a collector's piece with bold patch detailing.
+            </p>
+            <button data-bs-toggle="modal" data-bs-target="#modal-jersey1">
+              Add to cart
+            </button>
+          </div>
+
+          <div class="shop-jerseys">
+            <img
+              src="assets/img/jersey2.webp"
+              alt="Tyrese Proctor Icon Swingman Jersey"
+            />
+            <h6>[WINE] Tyrese Proctor Icon Swingman Jersey</h6>
+            <p class="price">$120.00</p>
+            <p>
+              The primary team color and the official road uniform. This vibrant
+              Wine jersey embodies the franchise's rich history and championship
+              legacy.
+            </p>
+            <button data-bs-toggle="modal" data-bs-target="#modal-jersey2">
+              Add to cart
+            </button>
+          </div>
+
+          <div class="shop-jerseys">
+            <img
+              src="assets/img/jersey3.jpg"
+              alt="Darius Garland City Edition Swingman Jersey"
+            />
+            <h6>[ORANGE] Darius Garland City Edition Swingman Jersey</h6>
+            <p class="price">$125.00</p>
+            <p>
+              Honoring the city's enduring spirit, this jersey features bold
+              Orange and Blue accents, paying tribute to a special part of
+              Cleveland's culture.
+            </p>
+            <button data-bs-toggle="modal" data-bs-target="#modal-jersey3">
+              Add to cart
+            </button>
+          </div>
+
+          <div class="shop-jerseys">
+            <img
+              src="assets/img/jersey4.jpg"
+              alt="Evan Mobley Statement Authentic Jersey"
+            />
+            <h6>[BLACK] Evan Mobley Statement Authentic Jersey</h6>
+            <p class="price">$200.00</p>
+            <p>
+              The team's bold alternate uniform, represents the grit, hustle,
+              and defensive mindset of the Cleveland Cavaliers.
+            </p>
+            <button data-bs-toggle="modal" data-bs-target="#modal-jersey4">
+              Add to cart
+            </button>
+          </div>
+
+          <div class="shop-jerseys">
+            <img
+              src="assets/img/jersey5.webp"
+              alt="Donovan Mitchell Classic Edition Swingman Jersey"
+            />
+            <h6>[NAVY] Donovan Mitchell Classic Edition Swingman Jersey</h6>
+            <p class="price">$125.00</p>
+            <p>
+              Classic throwback to the mid-2000s LeBron-era. Features the
+              beloved navy blue, Wine, and Gold trim, honoring a key era of Cavs
+              history.
+            </p>
+            <button data-bs-toggle="modal" data-bs-target="#modal-jersey5">
+              Add to cart
+            </button>
+          </div>
+
+          <div class="shop-jerseys">
+            <img
+              src="assets/img/jersey6.jpg"
+              alt="Jarrett Allen Association Swingman Jersey"
+            />
+            <h6>[WHITE] Jarrett Allen Association Swingman Jersey</h6>
+            <p class="price">$120.00</p>
+            <p>
+              The official home uniform worn on the court. Crisp white jersey
+              featuring bold Wine and Gold accents, representing the spirit of
+              the league.
+            </p>
+            <button data-bs-toggle="modal" data-bs-target="#modal-jersey6">
+              Add to cart
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact spacing" id="contact-section">
+      <div class="heading">
+        <h1>Contact</h1>
+        <p>
+          Stay ahead of the game: get exclusive deals & the latest gear straight
+          to your email.
+        </p>
+      </div>
+      <div class="contact-content">
+        <div class="contact-left">
+          <div class="contact-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <p>Cleveland, US</p>
+          </div>
+          <div class="contact-item">
+            <i class="fa-solid fa-phone"></i>
+            <p>Phone: +84 912 142 647</p>
+          </div>
+          <div class="contact-item">
+            <i class="fa-solid fa-envelope"></i>
+            <p>Email: cavs@gmail.com</p>
+          </div>
+        </div>
+        <div class="contact-right">
+          <form action="">
+            <div class="contact-input">
+              <input type="text" name="" id="" placeholder="Name" />
+              <input type="email" name="" id="" placeholder="Email" />
+            </div>
+            <input type="text" name="" id="" placeholder="Message" />
+            <button type="submit">SEND</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Image -->
+    <section class="image-section"></section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-icon">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-x-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-youtube"></i>
+        <i class="fa-brands fa-tiktok"></i>
+        <i class="fa-brands fa-threads"></i>
+      </div>
+      <p>MADE BY BA TUYEN</p>
+    </footer>
+
+    <!-- Modals -->
+    <div
+      class="modal fade"
+      id="modal-jersey1"
+      tabindex="-1"
+      aria-labelledby="modalLabel1"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalLabel1">
+              [KING] LeBron James Canvas Jersey
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="name1" class="form-label">Your Name</label>
+                <input type="text" class="form-control" id="name1" required />
+              </div>
+              <div class="mb-3">
+                <label for="email1" class="form-label">Email Address</label>
+                <input type="email" class="form-control" id="email1" required />
+              </div>
+              <div class="mb-3">
+                <label for="size1" class="form-label">Select Size</label>
+                <select class="form-select" id="size1" required>
+                  <option value="">Choose...</option>
+                  <option value="S">Small (S)</option>
+                  <option value="M">Medium (M)</option>
+                  <option value="L">Large (L)</option>
+                  <option value="XL">X-Large (XL)</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="quantity1" class="form-label">Quantity</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="quantity1"
+                  value="1"
+                  min="1"
+                  required
+                />
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Add to Basket</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="modal-jersey2"
+      tabindex="-1"
+      aria-labelledby="modalLabel2"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalLabel2">
+              [WINE] Tyrese Proctor Icon Swingman Jersey
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="name2" class="form-label">Your Name</label>
+                <input type="text" class="form-control" id="name2" required />
+              </div>
+              <div class="mb-3">
+                <label for="email2" class="form-label">Email Address</label>
+                <input type="email" class="form-control" id="email2" required />
+              </div>
+              <div class="mb-3">
+                <label for="size2" class="form-label">Select Size</label>
+                <select class="form-select" id="size2" required>
+                  <option value="">Choose...</option>
+                  <option value="S">Small (S)</option>
+                  <option value="M">Medium (M)</option>
+                  <option value="L">Large (L)</option>
+                  <option value="XL">X-Large (XL)</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="quantity2" class="form-label">Quantity</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="quantity2"
+                  value="1"
+                  min="1"
+                  required
+                />
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Add to Basket</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="modal-jersey3"
+      tabindex="-1"
+      aria-labelledby="modalLabel3"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalLabel3">
+              [ORANGE] Darius Garland City Edition Swingman Jersey
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="name3" class="form-label">Your Name</label>
+                <input type="text" class="form-control" id="name3" required />
+              </div>
+              <div class="mb-3">
+                <label for="email3" class="form-label">Email Address</label>
+                <input type="email" class="form-control" id="email3" required />
+              </div>
+              <div class="mb-3">
+                <label for="size3" class="form-label">Select Size</label>
+                <select class="form-select" id="size3" required>
+                  <option value="">Choose...</option>
+                  <option value="S">Small (S)</option>
+                  <option value="M">Medium (M)</option>
+                  <option value="L">Large (L)</option>
+                  <option value="XL">X-Large (XL)</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="quantity3" class="form-label">Quantity</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="quantity3"
+                  value="1"
+                  min="1"
+                  required
+                />
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Add to Basket</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="modal-jersey4"
+      tabindex="-1"
+      aria-labelledby="modalLabel4"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalLabel4">
+              [BLACK] Evan Mobley Statement Authentic Jersey
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="name4" class="form-label">Your Name</label>
+                <input type="text" class="form-control" id="name4" required />
+              </div>
+              <div class="mb-3">
+                <label for="email4" class="form-label">Email Address</label>
+                <input type="email" class="form-control" id="email4" required />
+              </div>
+              <div class="mb-3">
+                <label for="size4" class="form-label">Select Size</label>
+                <select class="form-select" id="size4" required>
+                  <option value="">Choose...</option>
+                  <option value="S">Small (S)</option>
+                  <option value="M">Medium (M)</option>
+                  <option value="L">Large (L)</option>
+                  <option value="XL">X-Large (XL)</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="quantity4" class="form-label">Quantity</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="quantity4"
+                  value="1"
+                  min="1"
+                  required
+                />
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Add to Basket</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="modal-jersey5"
+      tabindex="-1"
+      aria-labelledby="modalLabel5"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalLabel5">
+              [NAVY] Donovan Mitchell Classic Edition Jersey
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="name5" class="form-label">Your Name</label>
+                <input type="text" class="form-control" id="name5" required />
+              </div>
+              <div class="mb-3">
+                <label for="email5" class="form-label">Email Address</label>
+                <input type="email" class="form-control" id="email5" required />
+              </div>
+              <div class="mb-3">
+                <label for="size5" class="form-label">Select Size</label>
+                <select class="form-select" id="size5" required>
+                  <option value="">Choose...</option>
+                  <option value="S">Small (S)</option>
+                  <option value="M">Medium (M)</option>
+                  <option value="L">Large (L)</option>
+                  <option value="XL">X-Large (XL)</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="quantity5" class="form-label">Quantity</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="quantity5"
+                  value="1"
+                  min="1"
+                  required
+                />
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Add to Basket</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="modal-jersey6"
+      tabindex="-1"
+      aria-labelledby="modalLabel6"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalLabel6">
+              [WHITE] Jarrett Allen Association Swingman Jersey
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="name6" class="form-label">Your Name</label>
+                <input type="text" class="form-control" id="name6" required />
+              </div>
+              <div class="mb-3">
+                <label for="email6" class="form-label">Email Address</label>
+                <input type="email" class="form-control" id="email6" required />
+              </div>
+              <div class="mb-3">
+                <label for="size6" class="form-label">Select Size</label>
+                <select class="form-select" id="size6" required>
+                  <option value="">Choose...</option>
+                  <option value="S">Small (S)</option>
+                  <option value="M">Medium (M)</option>
+                  <option value="L">Large (L)</option>
+                  <option value="XL">X-Large (XL)</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="quantity6" class="form-label">Quantity</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="quantity6"
+                  value="1"
+                  min="1"
+                  required
+                />
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Add to Basket</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="..."
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/scripts/main.js"></script>
+  </body>
+</html>
