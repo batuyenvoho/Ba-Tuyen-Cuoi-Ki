@@ -1,4 +1,4 @@
-# 🏀 Dự án Website của Đội bóng rổ Cleveland Cavaliers
+# 🏀 Dự án website cuối kì
 
 ## 📝 Thông tin
 
